@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2016-08-02T14:38:02.978+01:00" />
+  </meta>
+  <url value="http://amirjonnytest.org/fhir/condition-importance-extension" />
+  <name value="condition-importance-extension" />
+  <status value="draft" />
+  <description value="Condition importance" />
+  <requirements value="The ability to add extensions in a structured way is what keeps FHIR resources simple." />
+  <fhirVersion value="1.0.2" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Condition" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <fixedUri value="http://amirjonnytest.org/fhir/condition-importance-extension" />
+    </element>
+    <element>
+      <path value="Extension.valueBoolean" />
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
