@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-09T12:14:45.787+01:00" />
+    <lastUpdated value="2016-08-09T14:16:30.371+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
   <version value="1.0" />
@@ -173,7 +173,7 @@
     <element>
       <path value="Organization.type.coding.system" />
       <min value="1" />
-      <fixedUri value="http://hl7.org/fhir/ValueSet/CareConnect-OrganizationType-1" />
+      <fixedUri value="http://hl7.org.uk/fhir/ValueSet/CareConnect-OrganizationType" />
     </element>
     <element>
       <path value="Organization.type.coding.version" />

@@ -15,7 +15,7 @@
 	<publisher value="HL7 UK"/>
 	<description value="A type of organisation. This valueset references NHS Data Dictionary: Organisation Type."/>
 	<codeSystem>
-		<system value="http://hl7.org/fhir/ValueSet/CareConnect-OrganizationType-1"/>
+		<system value="http://hl7.org.uk/fhir/ValueSet/CareConnect-OrganizationType"/>
 		<concept>
 			<code value="AR"/>
 			<display value="Application Service Provider"/>
