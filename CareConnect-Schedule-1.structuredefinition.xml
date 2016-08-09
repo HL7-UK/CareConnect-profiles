@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-07-29T10:07:17.935+01:00" />
+    <lastUpdated value="2016-08-09T14:31:48.142+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-Schedule-1.structuredefinition.xml" />
   <version value="1.0" />
@@ -18,9 +18,99 @@
   <differential>
     <element>
       <path value="Schedule" />
+      <short value="A pre-scheduled time period associated with one or more practitioners and optionally a location, containing a number of bookable slots." />
       <type>
         <code value="Schedule" />
       </type>
+    </element>
+    <element>
+      <path value="Schedule.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Schedule.extension" />
+      <name value="additionalActors" />
+      <short value="Additional practitioners providing care for this schedule" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-AdditionalActor-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Schedule.extension" />
+      <name value="location" />
+      <short value="Location that the schedule is being run from." />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-Location-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Schedule.id" />
+      <short value="Logical id of this artifact. Must be populated with a globally unique identifier, except where resource is being sent to the server for creation when it must NOT be populated" />
+    </element>
+    <element>
+      <path value="Schedule.identifier.id" />
+      <representation value="xmlAttr" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Schedule.identifier.use" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Schedule.identifier.type" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Schedule.identifier.system" />
+      <min value="1" />
+      <exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
+    </element>
+    <element>
+      <path value="Schedule.identifier.value" />
+      <min value="1" />
+      <exampleString value="123456" />
+    </element>
+    <element>
+      <path value="Schedule.type.id" />
+      <representation value="xmlAttr" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Schedule.type.coding.id" />
+      <representation value="xmlAttr" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Schedule.actor" />
+      <short value="The Practitioner (or primary/first Practitioner) providing care for this Schedule. Additional practitioners should be added to the additionalActors element" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Schedule.planningHorizon" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Schedule.planningHorizon.id" />
+      <representation value="xmlAttr" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Schedule.planningHorizon.start" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
