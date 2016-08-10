@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-05T13:48:48.699+01:00" />
+    <lastUpdated value="2016-08-10T09:30:04.327+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
   <version value="1.0" />
@@ -21,6 +21,255 @@
       <type>
         <code value="Patient" />
       </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="ethnicCategory" />
+      <definition value="The ethnicity of the subject." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-EthnicCategory-1-Extension.structuredefinition.xml" />
+      </type>
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element>
+      <path value="Patient.id" />
+      <short value="Logical id of this artifact. Must be populated with a globally unique identifier, except where resource is being sent to the server for creation when it must NOT be populated" />
+    </element>
+    <element>
+      <path value="Patient.identifier" />
+      <slicing>
+        <discriminator value="system" />
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Patient.identifier" />
+      <name value="nhsNumber" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Patient.identifier.id" />
+      <representation value="xmlAttr" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.use" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.type" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.nhs.net/Id/nhs-number" />
+      <exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
+    </element>
+    <element>
+      <path value="Patient.identifier.value" />
+      <short value="Ten numeric digit NHS number" />
+      <min value="1" />
+      <exampleString value="123456" />
+    </element>
+    <element>
+      <path value="Patient.identifier.period" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier" />
+      <name value="chiNumber" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Patient.identifier.id" />
+      <representation value="xmlAttr" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.use" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.type" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://UNCONFIRMED-fhir.nhs.net/Id/chi-number" />
+      <exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
+    </element>
+    <element>
+      <path value="Patient.identifier.value" />
+      <short value="CHI number" />
+      <min value="1" />
+      <exampleString value="123456" />
+    </element>
+    <element>
+      <path value="Patient.identifier.period" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier" />
+      <name value="hcNumber" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Patient.identifier.id" />
+      <representation value="xmlAttr" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.use" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.type" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://UNCONFIRMED-fhir.nhs.net/Id/hc-number" />
+      <exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
+    </element>
+    <element>
+      <path value="Patient.identifier.value" />
+      <min value="1" />
+      <exampleString value="123456" />
+    </element>
+    <element>
+      <path value="Patient.identifier.period" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier" />
+      <name value="other" />
+    </element>
+    <element>
+      <path value="Patient.identifier.id" />
+      <representation value="xmlAttr" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
+    </element>
+    <element>
+      <path value="Patient.identifier.value" />
+      <min value="1" />
+      <exampleString value="123456" />
+    </element>
+    <element>
+      <path value="Patient.name.period" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.telecom.period" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.address.state" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.address.period" />
+      <max value="0" />
+      <examplePeriod>
+        <start value="2010-03-23" />
+        <end value="2010-07-01" />
+      </examplePeriod>
+    </element>
+    <element>
+      <path value="Patient.contact.name.period" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.contact.address.state" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.contact.address.period" />
+      <max value="0" />
+      <examplePeriod>
+        <start value="2010-03-23" />
+        <end value="2010-07-01" />
+      </examplePeriod>
+    </element>
+    <element>
+      <path value="Patient.contact.organization" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Animal" />
+      </extension>
+      <path value="Patient.animal" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.careProvider" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.managingOrganization" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.managingOrganization.id" />
+      <representation value="xmlAttr" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.link.other" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.link.other.id" />
+      <representation value="xmlAttr" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

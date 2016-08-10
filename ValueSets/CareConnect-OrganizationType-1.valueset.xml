@@ -3,7 +3,6 @@
 	<id value="CareConnect-OrganizationType-1"/>
 	<meta>
 		<lastUpdated value="2015-10-27T00:00:00+00:00"/>
-		<profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
 	</meta>
 	<extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
 		<valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_type_de.asp?shownav=0"/>
