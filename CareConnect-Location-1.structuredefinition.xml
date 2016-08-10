@@ -42,28 +42,6 @@
       <fixedUri value="http://hl7.org.uk/CareConnect-Location-1.structuredefinition.xml" />
     </element>
     <element>
-      <path value="Location.identifier.use" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Location.identifier.type" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Location.identifier.system" />
-      <min value="1" />
-      <exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
-    </element>
-    <element>
-      <path value="Location.identifier.value" />
-      <min value="1" />
-      <exampleString value="123456" />
-    </element>
-    <element>
-      <path value="Location.identifier.period" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Location.identifier.assigner" />
       <type>
         <code value="Reference" />

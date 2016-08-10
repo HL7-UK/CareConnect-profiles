@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-10T12:00:31.661+01:00" />
+    <lastUpdated value="2016-08-10T13:02:10.525+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
   <name value="CareConnect-Practitioner-1" />
@@ -139,20 +139,8 @@
       <max value="0" />
     </element>
     <element>
-      <path value="Practitioner.telecom.period" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Practitioner.address.state" />
       <max value="0" />
-    </element>
-    <element>
-      <path value="Practitioner.address.period" />
-      <max value="0" />
-      <examplePeriod>
-        <start value="2010-03-23" />
-        <end value="2010-07-01" />
-      </examplePeriod>
     </element>
     <element>
       <path value="Practitioner.practitionerRole.managingOrganization" />
