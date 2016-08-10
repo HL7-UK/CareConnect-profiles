@@ -12,7 +12,7 @@
 	<name value=“CareConnect-EthnicCategory-1”/>
 	<status value="draft"/>
 	<publisher value=“HL7 UK”/>
-	<description value="The ethnicity of a patient, as specified by the patient. This valueset is comprised of codes from references NHS Data Dictionary: Ethnic Category Code."/>
+	<description value="The ethnicity of a patient, as specified by the patient. This valueset is comprised of codes from NHS Data Dictionary: Ethnic Category Code."/>
 	<codeSystem>
 		<system value="http://hl7.org.uk/fhir/ValueSet/CareConnect-EthnicCategory”/>
 		<concept>

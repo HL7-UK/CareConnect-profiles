@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-10T12:57:32.192+01:00" />
+    <lastUpdated value="2016-08-10T14:11:07.394+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
   <version value="1.0" />
@@ -73,6 +73,24 @@
       <path value="Patient.identifier" />
       <name value="nhsNumber" />
       <max value="1" />
+    </element>
+    <element>
+      <path value="Patient.identifier.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Patient.identifier.extension" />
+      <name value="nhsNumberVerificationStatus" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-NhsNumberVerificationStatus-1-Extension.structuredefinition.xml" />
+      </type>
     </element>
     <element>
       <path value="Patient.identifier.use" />
