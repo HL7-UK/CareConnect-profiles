@@ -66,16 +66,6 @@
       </type>
     </element>
     <element>
-      <path value="Schedule.type.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Schedule.type.coding.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Schedule.actor" />
       <short value="The Practitioner (or primary/first Practitioner) providing care for this Schedule. Additional practitioners should be added to the additionalActors element" />
       <type>
@@ -86,11 +76,6 @@
     <element>
       <path value="Schedule.planningHorizon" />
       <min value="1" />
-    </element>
-    <element>
-      <path value="Schedule.planningHorizon.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
     </element>
     <element>
       <path value="Schedule.planningHorizon.start" />

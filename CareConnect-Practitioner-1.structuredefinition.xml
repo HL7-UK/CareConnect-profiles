@@ -38,11 +38,6 @@
       <max value="1" />
     </element>
     <element>
-      <path value="Practitioner.identifier.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Practitioner.identifier.use" />
       <max value="0" />
     </element>
@@ -74,11 +69,6 @@
       <name value="sdsRoleProfileId" />
     </element>
     <element>
-      <path value="Practitioner.identifier.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Practitioner.identifier.use" />
       <max value="0" />
     </element>
@@ -107,11 +97,6 @@
     <element>
       <path value="Practitioner.name" />
       <min value="1" />
-    </element>
-    <element>
-      <path value="Practitioner.name.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
     </element>
     <element>
       <path value="Practitioner.name.use" />
@@ -181,16 +166,6 @@
         <strength value="required" />
         <valueSetUri value="http://hl7.org.uk/CareConnect-HumanLanguage-1.valueset.xml" />
       </binding>
-    </element>
-    <element>
-      <path value="Practitioner.communication.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Practitioner.communication.coding.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
     </element>
     <element>
       <path value="Practitioner.communication.coding.system" />

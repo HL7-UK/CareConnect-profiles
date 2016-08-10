@@ -23,11 +23,6 @@
       <path value="Extension" />
     </element>
     <element>
-      <path value="Extension.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Extension.url" />
       <representation value="xmlAttr" />
       <fixedUri value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Extension.structuredefinition.xml" />

@@ -59,11 +59,6 @@
       <max value="1" />
     </element>
     <element>
-      <path value="Organization.identifier.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Organization.identifier.use" />
       <max value="0" />
     </element>
@@ -96,11 +91,6 @@
       <short value="Business identifier issued locally or by system supplier" />
     </element>
     <element>
-      <path value="Organization.identifier.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Organization.identifier.use" />
       <max value="0" />
     </element>
@@ -131,11 +121,6 @@
       </type>
     </element>
     <element>
-      <path value="Organization.identifier.assigner.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Organization.active.extension" />
       <slicing>
         <discriminator value="url" />
@@ -155,21 +140,11 @@
       </type>
     </element>
     <element>
-      <path value="Organization.type.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Organization.type.coding" />
       <binding>
         <strength value="extensible" />
         <valueSetUri value="http://hl7.org.uk/CareConnect-OrganizationType-1.valueset.xml" />
       </binding>
-    </element>
-    <element>
-      <path value="Organization.type.coding.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
     </element>
     <element>
       <path value="Organization.type.coding.system" />

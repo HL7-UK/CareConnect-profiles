@@ -27,11 +27,6 @@
       <short value="Logical id of this artifact. Must be populated with a globally unique identifier, except where resource is being sent to the server for creation when it must NOT be populated" />
     </element>
     <element>
-      <path value="Location.identifier.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Location.identifier.use" />
       <max value="0" />
     </element>
@@ -59,11 +54,6 @@
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
       </type>
-    </element>
-    <element>
-      <path value="Location.identifier.assigner.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
     </element>
     <element>
       <path value="Location.status.extension" />
@@ -99,21 +89,11 @@
       </type>
     </element>
     <element>
-      <path value="Location.managingOrganization.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Location.partOf" />
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Location-1.structuredefinition.xml" />
       </type>
-    </element>
-    <element>
-      <path value="Location.partOf.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

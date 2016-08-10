@@ -44,11 +44,6 @@
       </type>
     </element>
     <element>
-      <path value="Slot.schedule.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Slot.schedule.reference" />
       <min value="1" />
     </element>

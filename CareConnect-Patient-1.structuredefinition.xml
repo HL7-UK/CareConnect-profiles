@@ -60,11 +60,6 @@
       <max value="1" />
     </element>
     <element>
-      <path value="Patient.identifier.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Patient.identifier.use" />
       <max value="0" />
     </element>
@@ -96,11 +91,6 @@
       <path value="Patient.identifier" />
       <name value="chiNumber" />
       <max value="1" />
-    </element>
-    <element>
-      <path value="Patient.identifier.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
     </element>
     <element>
       <path value="Patient.identifier.use" />
@@ -136,11 +126,6 @@
       <max value="1" />
     </element>
     <element>
-      <path value="Patient.identifier.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Patient.identifier.use" />
       <max value="0" />
     </element>
@@ -172,11 +157,6 @@
       <name value="other" />
     </element>
     <element>
-      <path value="Patient.identifier.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Patient.identifier.system" />
       <min value="1" />
       <exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
@@ -190,11 +170,6 @@
       <path value="Patient.name" />
       <min value="1" />
       <max value="1" />
-    </element>
-    <element>
-      <path value="Patient.name.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
     </element>
     <element>
       <path value="Patient.name.use" />
@@ -275,16 +250,6 @@
       </binding>
     </element>
     <element>
-      <path value="Patient.communication.language.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Patient.communication.language.coding.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Patient.communication.language.coding.system" />
       <min value="1" />
       <fixedUri value="http://hl7.org.uk/fhir/ValueSet/CareConnect-HumanLanguage" />
@@ -320,21 +285,11 @@
       </type>
     </element>
     <element>
-      <path value="Patient.managingOrganization.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Patient.link.other" />
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
       </type>
-    </element>
-    <element>
-      <path value="Patient.link.other.id" />
-      <representation value="xmlAttr" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
