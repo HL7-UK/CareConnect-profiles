@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-10T11:56:27.997+01:00" />
+    <lastUpdated value="2016-08-10T14:27:25.174+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-Appointment-1.structuredefinition.xml" />
   <version value="1.0" />
@@ -20,6 +20,49 @@
       <path value="Appointment" />
       <type>
         <code value="Appointment" />
+      </type>
+    </element>
+    <element>
+      <path value="Appointment.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Appointment.extension" />
+      <name value="arrived" />
+      <short value="When the patient arrived for the appointment" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-AppointmentArrived-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Appointment.extension" />
+      <name value="sentIn" />
+      <short value="When the patient was sent in for the appointment" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-AppointmentSentIn-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Appointment.extension" />
+      <name value="left" />
+      <short value="When the patient left the appointment" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-AppointmentLeft-1-Extension.structuredefinition.xml" />
       </type>
     </element>
     <element>
