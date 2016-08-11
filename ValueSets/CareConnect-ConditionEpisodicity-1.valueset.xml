@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/valueset.xsd">
+	<id value="CareConnect-ConditionEpisodicity-1"/>
+	<meta>
+		<lastUpdated value="2015-10-27T00:00:00+00:00"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+	</meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"/>
+	<url value="http://hl7.org.uk/CareConnect-ConditionEpisodicity-1.valueset.xml"/>
+	<version value="1.0.0"/>
+	<name value="CareConnect-ConditionEpisodicity-1"/>
+	<status value="draft"/>
+	<publisher value="HL7 UK"/>
+	<description value="The type of relationship that exists between a follow-on condition and the target problem episode."/>
+	<codeSystem>
+		<system value="http://hl7.org.uk/fhir/ValueSet/CareConnect-ConditionEpisodicity"/>
+		<concept>
+			<code value="review"/>
+			<display value="Review"/>
+			<definition value="The condition is a review of the target problem episode"/>
+		</concept>
+		<concept>
+			<code value="flare"/>
+			<display value="Flare"/>
+			<definition value="The condition marks a flare-up of the target problem episode"/>
+		</concept>
+		<concept>
+			<code value="end"/>
+			<display value="End"/>
+			<definition value="The condition marks the end of the target problem episode"/>
+		</concept>
+	</codeSystem>
+</ValueSet>
