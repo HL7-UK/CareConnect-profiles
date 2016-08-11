@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-07-29T10:07:16.174+01:00" />
+    <lastUpdated value="2016-08-11T09:38:53.383+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-AllergyIntolerance-1.structuredefinition.xml" />
   <version value="1.0" />
@@ -20,6 +20,101 @@
       <path value="AllergyIntolerance" />
       <type>
         <code value="AllergyIntolerance" />
+      </type>
+    </element>
+    <element>
+      <path value="AllergyIntolerance.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="AllergyIntolerance.extension" />
+      <name value="encounter" />
+      <short value="An encounter reference" />
+      <definition value="Encounter event during which this AllergyIntolerance was recorded." />
+      <comments value="This record indicates the encounter this particular record is associated with." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter" />
+      </type>
+    </element>
+    <element>
+      <path value="AllergyIntolerance.extension" />
+      <name value="endDate" />
+      <short value="Allergy end date" />
+      <definition value="The date that the allergy was no longer valid." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-AllergyIntoleranceEndDate-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="AllergyIntolerance.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="AllergyIntolerance.recorder" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="AllergyIntolerance.patient" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="AllergyIntolerance.reporter" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="AllergyIntolerance.substance" />
+      <comments value="It is strongly recommended that the substance be coded where possible. Plain text should only be used if there is no appropriate terminology available. In addition, a SNOMED AllergyCode may be sent where a direct substance mapping is not available in the source system." />
+    </element>
+    <element>
+      <path value="AllergyIntolerance.reaction.manifestation.coding.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="AllergyIntolerance.reaction.manifestation.coding.extension" />
+      <name value="qualifier" />
+      <short value="Coding Qualifier" />
+      <definition value="Used to qualify or indicate extra information about a coded value e.g. Laterality, Severity, etc." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Extension.structuredefinition.xml" />
       </type>
     </element>
   </differential>
