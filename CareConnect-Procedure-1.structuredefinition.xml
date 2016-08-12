@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2016-08-12T11:53:49.508+01:00" />
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm-no-warnings">
+    <valueInteger value="2" />
+  </extension>
+  <url value="http://hl7.org.uk/CareConnect-Procedure-1.structuredefinition.xml" />
+  <name value="CareConnect-Procedure-1" />
+  <status value="draft" />
+  <publisher value="HL7 UK" />
+  <description value="CareConnect Procedure profile" />
+  <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
+  <fhirVersion value="1.0.2" />
+  <kind value="resource" />
+  <constrainedType value="Procedure" />
+  <abstract value="false" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+  <differential>
+    <element>
+      <path value="Procedure" />
+      <type>
+        <code value="Procedure" />
+      </type>
+    </element>
+    <element>
+      <path value="Procedure.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Procedure.extension" />
+      <name value="recordedDate" />
+      <short value="When first entered" />
+      <definition value="A date, when the statement was documented." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-RecordedDate-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Procedure.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Procedure.subject" />
+      <definition value="The person on which the procedure was performed." />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Procedure.category" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Procedure.code" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/procedure-code" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Procedure.code.coding.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Procedure.code.coding.extension" />
+      <name value="qualifier" />
+      <short value="Coding Qualifier" />
+      <definition value="Used to qualify or indicate extra information about a coded value e.g. Laterality, Severity, etc." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Procedure.notPerformed" />
+      <max value="0" />
+      <defaultValueBoolean value="false" />
+    </element>
+    <element>
+      <path value="Procedure.reasonNotPerformed" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Procedure.reason[x]" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Procedure.performer.actor" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Procedure.encounter" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Encounter-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Procedure.location" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Location-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Procedure.outcome" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Procedure.report" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Procedure.complication" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Procedure.followUp" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Procedure.request" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Procedure.notes.author[x]" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Procedure.notes.time" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Procedure.focalDevice" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Procedure.used" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
