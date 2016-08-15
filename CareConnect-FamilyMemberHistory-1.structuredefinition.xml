@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2016-08-15T06:15:09.249+01:00" />
+  </meta>
+  <url value="http://hl7.org.uk/CareConnect-FamilyMemberHistory-1.structuredefinition.xml" />
+  <name value="CareConnect-FamilyMemberHistory-1" />
+  <status value="draft" />
+  <publisher value="HL7 UK" />
+  <description value="CareConnect FamilyMemberHistory profile" />
+  <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
+  <fhirVersion value="1.0.2" />
+  <kind value="resource" />
+  <constrainedType value="FamilyMemberHistory" />
+  <abstract value="false" />
+  <base value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory" />
+  <differential>
+    <element>
+      <path value="FamilyMemberHistory" />
+      <type>
+        <code value="FamilyMemberHistory" />
+      </type>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.extension" />
+      <name value="recorder" />
+      <short value="Who recorded the family member history" />
+      <definition value="Individual who recorded the record and takes responsibility for its content." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-FamilyMemberHistoryRecorder-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.extension" />
+      <name value="encounter" />
+      <short value="An encounter reference" />
+      <definition value="Encounter event during which this AllergyIntolerance was recorded." />
+      <comments value="This record indicates the encounter this particular record is associated with." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter" />
+      </type>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.patient" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.relationship" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/v3-FamilyMember" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.born[x]" />
+      <type>
+        <code value="Period" />
+      </type>
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.age[x]" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Age" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.deceased[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Age" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.note.author[x]" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.note.time" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.condition" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.condition.code" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/condition-code" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.condition.code.coding.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.condition.code.coding.extension" />
+      <name value="qualifier" />
+      <short value="Coding Qualifier" />
+      <definition value="Used to qualify or indicate extra information about a coded value e.g. Laterality, Severity, etc." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.condition.outcome" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/condition-outcome" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.condition.onset[x]" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Age" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.condition.note.author[x]" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.condition.note.time" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
