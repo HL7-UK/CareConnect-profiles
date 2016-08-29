@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-10T18:13:32.4+01:00" />
+    <lastUpdated value="2016-08-29T09:35:21.17+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-ProblemRelationship-1-Extension.structuredefinition.xml" />
   <name value="CareConnect-ProblemRelationship-1-Extension" />
@@ -38,11 +38,6 @@
       <max value="1" />
     </element>
     <element>
-      <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
-      <fixedUri value="type" />
-    </element>
-    <element>
       <path value="Extension.extension.valueCode" />
       <short value="combined | grouped | replaces | evolved-from" />
       <min value="1" />
@@ -65,17 +60,12 @@
       <max value="1" />
     </element>
     <element>
-      <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
-      <fixedUri value="target" />
-    </element>
-    <element>
       <path value="Extension.extension.valueReference" />
       <short value="Related problem" />
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Problem-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Problem-Condition-1.structuredefinition.xml" />
       </type>
     </element>
     <element>

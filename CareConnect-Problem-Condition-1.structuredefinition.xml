@@ -1,14 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-10T18:27:05.898+01:00" />
   </meta>
-  <url value="http://hl7.org.uk/CareConnect-Problem-1.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-Problem-Condition-1.structuredefinition.xml" />
   <version value="1.0" />
-  <name value="CareConnect-Problem-1" />
+  <name value="CareConnect-Problem-Condition-1" />
   <status value="draft" />
   <publisher value="HL7 UK" />
-  <description value="CareConnect Problem profile - used to record detailed information about the onset of a health problem episode recognised by a clinician." />
+  <description value="Problem Condition resource is used to record detailed information about problems recognised by a clinician." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
@@ -18,6 +17,8 @@
   <differential>
     <element>
       <path value="Condition" />
+      <short value="Detailed information about problems" />
+      <definition value="Use to record detailed information about problems recognised by a clinician. " />
       <type>
         <code value="Condition" />
       </type>
@@ -28,42 +29,6 @@
         <discriminator value="url" />
         <rules value="openAtEnd" />
       </slicing>
-    </element>
-    <element>
-      <path value="Condition.extension" />
-      <name value="significance" />
-      <short value="Problem significance - Significant | Not significant | Unspecified significance" />
-      <definition value="Used to indicate the clinical significance of the problem." />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-ProblemSignificance-1-Extension.structuredefinition.xml" />
-      </type>
-    </element>
-    <element>
-      <path value="Condition.extension" />
-      <name value="expectedDuration" />
-      <short value="Problem expected duration " />
-      <definition value="Estimated or actual expected duration of the problem." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-ProblemExpectedDuration-1-Extension.structuredefinition.xml" />
-      </type>
-    </element>
-    <element>
-      <path value="Condition.extension" />
-      <name value="lastReviewed" />
-      <short value="Last reviewed date" />
-      <definition value="Estimated or actual date or date-time the problem was last reviewed." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-ProblemLastReviewed-1-Extension.structuredefinition.xml" />
-      </type>
     </element>
     <element>
       <path value="Condition.extension" />
@@ -90,11 +55,25 @@
       </type>
     </element>
     <element>
+      <path value="Condition.identifier.use" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Condition.identifier.type" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Condition.identifier.value" />
+      <min value="1" />
+      <exampleString value="123456" />
+    </element>
+    <element>
+      <path value="Condition.identifier.period" />
+      <max value="0" />
+    </element>
+    <element>
       <path value="Condition.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
-      </type>
+      <max value="0" />
     </element>
     <element>
       <path value="Condition.patient" />
@@ -112,6 +91,9 @@
     </element>
     <element>
       <path value="Condition.asserter" />
+      <short value="Author" />
+      <definition value="Individual who is authoring the problem statement." />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
@@ -122,15 +104,30 @@
       </type>
     </element>
     <element>
+      <path value="Condition.dateRecorded" />
+      <short value="Date entered" />
+      <definition value="The date when the problem statement was documented." />
+      <min value="1" />
+    </element>
+    <element>
       <path value="Condition.code" />
       <short value="Identification of the problem" />
       <definition value="Identification of the problem." />
       <binding>
-        <strength value="preferred" />
+        <strength value="example" />
         <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/condition-code" />
         </valueSetReference>
       </binding>
+    </element>
+    <element>
+      <path value="Condition.code.coding" />
+      <slicing>
+        <discriminator value="system" />
+        <ordered value="true" />
+        <rules value="openAtEnd" />
+      </slicing>
+      <min value="1" />
     </element>
     <element>
       <path value="Condition.code.coding.extension" />
@@ -152,13 +149,61 @@
       </type>
     </element>
     <element>
+      <path value="Condition.code.coding" />
+      <name value="SNOMED CT" />
+      <short value="SNOMED CT representation identifying the problem" />
+      <max value="1" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Identification of the problem" />
+      </binding>
+    </element>
+    <element>
+      <path value="Condition.code.coding.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Condition.code.coding.extension" />
+      <name value="qualifier" />
+      <short value="Coding Qualifier" />
+      <definition value="Used to qualify or indicate extra information about a coded value e.g. Laterality, Problem Significance etc." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Condition.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element>
+      <path value="Condition.code.coding.version" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Condition.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Condition.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element>
       <path value="Condition.category" />
-      <short value="problem" />
+      <short value="Coded category indicating a problem condition" />
+      <definition value="A coded category assigned to the condition resource to indicate the representation of a problem." />
       <min value="1" />
       <binding>
         <strength value="required" />
+        <description value="A category assigned to the condition" />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/CareConnect-ConditionCategory-1.valueset" />
+          <reference value="http://hl7.org.uk/CareConnect-ProblemConditionCategory-1.valueset" />
         </valueSetReference>
       </binding>
     </element>
@@ -172,7 +217,10 @@
     <element>
       <path value="Condition.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://hl7.org.uk/CareConnect-ConditionCategory-1.valueset" />
+    </element>
+    <element>
+      <path value="Condition.category.coding.version" />
+      <max value="0" />
     </element>
     <element>
       <path value="Condition.category.coding.code" />
@@ -184,48 +232,51 @@
       <fixedString value="Problem" />
     </element>
     <element>
+      <path value="Condition.category.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Condition.category.text" />
+      <max value="0" />
+    </element>
+    <element>
       <path value="Condition.clinicalStatus" />
-      <min value="1" />
       <binding>
         <strength value="required" />
+        <description value="The clinical status of the problem." />
         <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/condition-clinical" />
         </valueSetReference>
       </binding>
     </element>
     <element>
-      <path value="Condition.onset[x]" />
+      <path value="Condition.verificationStatus" />
+      <binding>
+        <strength value="required" />
+        <description value="The verification status to support or decline the clinical status of the problem." />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/condition-ver-status" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Condition.severity.coding.version" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Condition.onsetDateTime" />
+      <short value="Estimated or actual date or date-time" />
+      <definition value="Estimated or actual date or date-time the problem began, in the opinion of the clinician." />
       <type>
         <code value="dateTime" />
-      </type>
-      <type>
-        <code value="Quantity" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Age" />
-      </type>
-      <type>
-        <code value="Period" />
-      </type>
-      <type>
-        <code value="Range" />
       </type>
     </element>
     <element>
-      <path value="Condition.abatement[x]" />
+      <path value="Condition.abatementDateTime" />
+      <short value="When in resolution/remission" />
+      <definition value="The date or estimated date that the problem resolved or went into remission. This is called &quot;abatement&quot; because of the many overloaded connotations associated with &quot;remission&quot; or &quot;resolution&quot; - Conditions are never really resolved, but they can abate." />
       <type>
         <code value="dateTime" />
-      </type>
-      <type>
-        <code value="Quantity" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Age" />
-      </type>
-      <type>
-        <code value="boolean" />
-      </type>
-      <type>
-        <code value="Period" />
-      </type>
-      <type>
-        <code value="Range" />
       </type>
     </element>
     <element>
@@ -235,6 +286,15 @@
     <element>
       <path value="Condition.evidence" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="Condition.bodySite" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Condition.notes" />
+      <short value="Additional information about the problem" />
+      <definition value="Additional information about the problem. This is a general notes/comments entry for description of the Condition, its diagnosis and prognosis." />
     </element>
   </differential>
 </StructureDefinition>
