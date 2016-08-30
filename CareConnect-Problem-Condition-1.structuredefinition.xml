@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-29T13:15:48.778+01:00" />
+    <lastUpdated value="2016-08-30T08:18:27.708+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-Problem-Condition-1.structuredefinition.xml" />
   <version value="1.0" />
@@ -2187,6 +2187,7 @@
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+        <aggregation value="bundled" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -2246,7 +2247,7 @@
     </element>
     <element>
       <path value="Condition.patient.reference" />
-      <short value="Relative, internal or absolute URL reference" />
+      <short value="Relative URL reference to the Patient resource" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
       <min value="0" />
@@ -2302,6 +2303,7 @@
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Encounter-1.structuredefinition.xml" />
+        <aggregation value="bundled" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -2361,7 +2363,7 @@
     </element>
     <element>
       <path value="Condition.encounter.reference" />
-      <short value="Relative, internal or absolute URL reference" />
+      <short value="Relative URL reference to the Encounter resource" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
       <min value="0" />
@@ -2416,10 +2418,12 @@
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+        <aggregation value="referenced" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -2805,6 +2809,7 @@
       <binding>
         <strength value="required" />
         <description value="Identification of the problem." />
+        <valueSetUri value="http://snomed.info/sct" />
       </binding>
       <mapping>
         <identity value="v2" />
@@ -5374,6 +5379,7 @@
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+        <aggregation value="bundled" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -5387,6 +5393,28 @@
       <mapping>
         <identity value="w5" />
         <map value="who.focus" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Condition.patient.reference" />
+      <short value="Relative URL reference to the Patient resource" />
+      <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
+      <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Condition.patient.reference" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ref-1" />
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
       </mapping>
     </element>
     <element>
@@ -5404,6 +5432,7 @@
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Encounter-1.structuredefinition.xml" />
+        <aggregation value="bundled" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -5420,6 +5449,28 @@
       </mapping>
     </element>
     <element>
+      <path value="Condition.encounter.reference" />
+      <short value="Relative URL reference to the Encounter resource" />
+      <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
+      <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Condition.encounter.reference" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ref-1" />
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
       <path value="Condition.asserter" />
       <short value="Author" />
       <definition value="Individual who is authoring the problem statement." />
@@ -5433,10 +5484,12 @@
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+        <aggregation value="referenced" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -5591,6 +5644,7 @@
       <binding>
         <strength value="required" />
         <description value="Identification of the problem." />
+        <valueSetUri value="http://snomed.info/sct" />
       </binding>
       <mapping>
         <identity value="v2" />
