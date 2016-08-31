@@ -8,7 +8,7 @@
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"/>
 	<url value="http://hl7.org.uk/CareConnect-DiagnosticOrderCode-1-VS"/>
 	<version value="1.0.0"/>
-	<name value="CareConnect-DiagnosticOrderCode-1"/>
+	<name value="CareConnect-DiagnosticOrderCode-1-Valueset"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="This value set includes a list of codes that can be used to indicate the diagnostic order type."/>

@@ -9,7 +9,7 @@
 	</extension>
 	<url value="http://hl7.org.uk/CareConnect-NhsNumberVerificatnStatus-1-VS"/>
 	<version value="1.0.0"/>
-	<name value="CareConnect-NhsNumberVerificationStatus-1"/>
+	<name value="CareConnect-NhsNumberVerificationStatus-1-Valueset"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="NHS number verification status.  This valueset is comprised of codes from NHS Data Dictionary: NHS Number Status Indicator Code."/>

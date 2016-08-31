@@ -9,7 +9,7 @@
 	</extension>
 	<url value="http://hl7.org.uk/CareConnect-OrganizationType-1-VS"/>
 	<version value="1.0.0"/>
-	<name value="CareConnect-OrganizationType-1"/>
+	<name value="CareConnect-OrganizationType-1-Valueset"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="A type of organisation. This valueset references NHS Data Dictionary: Organisation Type."/>

@@ -4,7 +4,7 @@
 		<lastUpdated value="2016-08-29T00:00:00+00:00"/>
 	</meta>
 	<url value="http://hl7.org.uk/CareConnect-ProblemRelationshipType-1-VS"/>
-	<name value="Care Connect Problem Relationship Type"/>
+	<name value="CareConnect-ProblemRelationshipType-1-Valueset"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="A set of codes specifying the kind of relationship that exists with a target problem."/>

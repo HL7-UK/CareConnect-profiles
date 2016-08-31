@@ -9,7 +9,7 @@
 	</extension>
 	<url value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-VS"/>
 	<version value="1.0.0"/>
-	<name value="CareConnect-ReligiousAffiliation-1"/>
+	<name value="CareConnect-ReligiousAffiliation-1-Valueset"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="A code from the SNOMED Clinical Terminology UK coding system that describes the religious or other belief system affiliation of a person. Any code from the SNOMED CT UK 'Religious Affiliation SnCT' subset with subset original id 10791000000130; the corresponding SNOMED CT UK Refset fully specified name is 'Religious or other belief system affiliation simple reference set (foundation metadata concept)' with Refset Id 999000531000000100."/>

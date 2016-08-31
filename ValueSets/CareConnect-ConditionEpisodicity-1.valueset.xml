@@ -4,7 +4,7 @@
 		<lastUpdated value="2016-08-29T00:00:00+00:00"/>
 	</meta>
 	<url value="http://hl7.org.uk/CareConnect-ConditionEpisodicity-1-VS"/>
-	<name value="Care Connect Condition Episodicity"/>
+	<name value="CareConnect-ConditionEpisodicity-1-Valueset"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="The type of relationship that exists between a follow-on condition and the target problem episode."/>
