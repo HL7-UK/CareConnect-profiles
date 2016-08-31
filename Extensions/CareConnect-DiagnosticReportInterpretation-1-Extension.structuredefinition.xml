@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2016-08-31T13:52:59.327+01:00" />
   </meta>
-  <url value="http://hl7.org.uk/CareConnect-DiagnosticReportInterpretation-1-Extension.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-DiagnosticReportInterpretation-1-Ext" />
   <name value="CareConnect-DiagnosticReportInterpretation-1-Extension" />
   <status value="draft" />
   <publisher value="HL7 UK" />
@@ -95,7 +95,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-DiagnosticReportInterpretation-1-Extension.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-DiagnosticReportInterpretation-1-Ext" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -162,7 +162,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-DiagnosticReportInterpretation-1-Extension.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-DiagnosticReportInterpretation-1-Ext" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />

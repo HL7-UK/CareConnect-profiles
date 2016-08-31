@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2016-08-31T13:51:02.325+01:00" />
   </meta>
-  <url value="http://hl7.org.uk/CareConnect-ProblemRelationship-1-Extension.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-ProblemRelationship-1-Ext" />
   <name value="CareConnect-ProblemRelationship-1-Extension" />
   <status value="draft" />
   <publisher value="HL7 UK" />
@@ -62,7 +62,7 @@
       <binding>
         <strength value="required" />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/CareConnect-ProblemRelationshipType-1.valueset" />
+          <reference value="http://hl7.org.uk/CareConnect-ProblemRelationshipType-1-VS" />
         </valueSetReference>
       </binding>
     </element>
@@ -80,7 +80,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Problem-Condition-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Problem-Condition-1" />
       </type>
     </element>
     <element>
@@ -141,7 +141,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-ProblemRelationship-1-Extension.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-ProblemRelationship-1-Ext" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -309,7 +309,7 @@
       <binding>
         <strength value="required" />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/CareConnect-ProblemRelationshipType-1.valueset" />
+          <reference value="http://hl7.org.uk/CareConnect-ProblemRelationshipType-1-VS" />
         </valueSetReference>
       </binding>
     </element>
@@ -327,7 +327,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Problem-Condition-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Problem-Condition-1" />
       </type>
     </element>
     <element>
@@ -346,7 +346,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-ProblemRelationship-1-Extension.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-ProblemRelationship-1-Ext" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />

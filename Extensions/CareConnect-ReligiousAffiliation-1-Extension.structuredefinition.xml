@@ -6,7 +6,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
   </extension>
-  <url value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-Extension.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-Ext" />
   <name value="CareConnect-ReligiousAffiliation-1-Extension" />
   <status value="draft" />
   <publisher value="HL7 UK" />
@@ -96,7 +96,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-Extension.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-Ext" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -120,7 +120,7 @@
         <strength value="required" />
         <description value="A code classifying the person's religious affiliation." />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1.valueset.xml" />
+          <reference value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-VS" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -164,7 +164,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-Extension.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-Ext" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -188,7 +188,7 @@
         <strength value="required" />
         <description value="A code classifying the person's religious affiliation." />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1.valueset.xml" />
+          <reference value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-VS" />
         </valueSetReference>
       </binding>
       <mapping>

@@ -6,7 +6,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
   </extension>
-  <url value="http://hl7.org.uk/CareConnect-MainLocation-1-Extension.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-MainLocation-1-Ext" />
   <name value="CareConnect-MainLocation-1-Extension" />
   <status value="draft" />
   <publisher value="HL7 UK" />
@@ -96,7 +96,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-MainLocation-1-Extension.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-MainLocation-1-Ext" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -115,7 +115,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Location-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Location-1" />
       </type>
       <mapping>
         <identity value="rim" />
@@ -158,7 +158,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-MainLocation-1-Extension.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-MainLocation-1-Ext" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -177,7 +177,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Location-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Location-1" />
       </type>
       <mapping>
         <identity value="rim" />

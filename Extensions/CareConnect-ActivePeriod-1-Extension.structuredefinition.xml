@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2016-08-31T13:47:53.42+01:00" />
   </meta>
-  <url value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Extension.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Ext" />
   <version value="1.0" />
   <name value="CareConnect-ActivePeriod-1-Extension" />
   <status value="draft" />
@@ -95,7 +95,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Extension.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Ext" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -156,7 +156,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Extension.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Ext" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
