@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2016-08-30T13:21:56.269+01:00" />
   </meta>
-  <url value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-Organization-1" />
   <version value="1.0" />
   <name value="CareConnect-Organization-1" />
   <status value="draft" />
@@ -68,7 +68,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-MainLocation-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-MainLocation-1-Ext" />
       </type>
     </element>
     <element>
@@ -217,7 +217,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-Organization-1" />
       <isSummary value="true" />
     </element>
     <element>
@@ -3571,7 +3571,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -3724,7 +3724,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Ext" />
       </type>
     </element>
     <element>
@@ -3829,7 +3829,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="extensible" />
-        <valueSetUri value="http://hl7.org.uk/CareConnect-OrganizationType-1.valueset.xml" />
+        <valueSetUri value="http://hl7.org.uk/CareConnect-OrganizationType-1-VS" />
       </binding>
       <mapping>
         <identity value="v2" />
@@ -4946,7 +4946,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -6687,7 +6687,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-MainLocation-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-MainLocation-1-Ext" />
       </type>
     </element>
     <element>
@@ -6744,7 +6744,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-Organization-1" />
       <isSummary value="true" />
     </element>
     <element>
@@ -7210,7 +7210,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -7242,7 +7242,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Ext" />
       </type>
     </element>
     <element>
@@ -7264,7 +7264,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="extensible" />
-        <valueSetUri value="http://hl7.org.uk/CareConnect-OrganizationType-1.valueset.xml" />
+        <valueSetUri value="http://hl7.org.uk/CareConnect-OrganizationType-1-VS" />
       </binding>
       <mapping>
         <identity value="v2" />
@@ -7447,7 +7447,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <isSummary value="true" />
       <mapping>

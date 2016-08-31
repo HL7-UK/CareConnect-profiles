@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2016-08-31T13:46:23.518+01:00" />
   </meta>
-  <url value="http://hl7.org.uk/CareConnect-MedicationStatement-1.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-MedicationStatement-1" />
   <name value="CareConnect-MedicationStatement-1" />
   <status value="draft" />
   <publisher value="HL7 UK" />

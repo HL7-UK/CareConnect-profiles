@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2016-08-31T13:45:28.951+01:00" />
   </meta>
-  <url value="http://hl7.org.uk/CareConnect-DiagnosticReport-1.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-DiagnosticReport-1" />
   <name value="CareConnect-DiagnosticReport-1" />
   <status value="draft" />
   <publisher value="HL7 UK" />
@@ -65,7 +65,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-DiagnosticReportInterpretation-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-DiagnosticReportInterpretation-1-Ext" />
       </type>
     </element>
     <element>
@@ -77,7 +77,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-DiagnosticReportComment-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-DiagnosticReportComment-1-Ext" />
       </type>
     </element>
     <element>
@@ -2082,7 +2082,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -2570,7 +2570,7 @@
       <binding>
         <strength value="preferred" />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/CareConnect-DiagnosticReportCode-1.valueset" />
+          <reference value="http://hl7.org.uk/CareConnect-DiagnosticReportCode-1-VS" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -2892,7 +2892,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -2921,7 +2921,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Encounter-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Encounter-1" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -3110,11 +3110,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -3145,7 +3145,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-DiagnosticOrder-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-DiagnosticOrder-1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -3171,7 +3171,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Specimen-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Specimen-1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -3290,7 +3290,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Observation-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Observation-1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -4295,7 +4295,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-DiagnosticReportInterpretation-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-DiagnosticReportInterpretation-1-Ext" />
       </type>
     </element>
     <element>
@@ -4307,7 +4307,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-DiagnosticReportComment-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-DiagnosticReportComment-1-Ext" />
       </type>
     </element>
     <element>
@@ -4324,7 +4324,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -4358,7 +4358,7 @@
       <binding>
         <strength value="preferred" />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/CareConnect-DiagnosticReportCode-1.valueset" />
+          <reference value="http://hl7.org.uk/CareConnect-DiagnosticReportCode-1-VS" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -4389,7 +4389,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -4418,7 +4418,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Encounter-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Encounter-1" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -4454,11 +4454,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -4489,7 +4489,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-DiagnosticOrder-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-DiagnosticOrder-1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -4515,7 +4515,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Specimen-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Specimen-1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -4549,7 +4549,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Observation-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Observation-1" />
       </type>
       <mapping>
         <identity value="v2" />

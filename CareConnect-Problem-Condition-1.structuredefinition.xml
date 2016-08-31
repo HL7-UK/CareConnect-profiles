@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2016-08-30T08:18:27.708+01:00" />
   </meta>
-  <url value="http://hl7.org.uk/CareConnect-Problem-Condition-1.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-Problem-Condition-1" />
   <version value="1.0" />
   <name value="CareConnect-Problem-Condition-1" />
   <status value="draft" />
@@ -60,7 +60,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-ProblemRelationship-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-ProblemRelationship-1-Ext" />
       </type>
     </element>
     <element>
@@ -72,7 +72,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-ProblemAssociated-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-ProblemAssociated-1-Ext" />
       </type>
     </element>
     <element>
@@ -2186,7 +2186,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1" />
         <aggregation value="bundled" />
       </type>
       <isSummary value="true" />
@@ -2302,7 +2302,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Encounter-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Encounter-1" />
         <aggregation value="bundled" />
       </type>
       <isSummary value="true" />
@@ -2417,12 +2417,12 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1" />
         <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
       </type>
       <isSummary value="true" />
@@ -2596,7 +2596,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Ext" />
       </type>
     </element>
     <element>
@@ -2840,7 +2840,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Ext" />
       </type>
     </element>
     <element>
@@ -3083,7 +3083,7 @@
         <strength value="required" />
         <description value="A category assigned to the condition" />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/CareConnect-ProblemConditionCategory-1.valueset" />
+          <reference value="http://hl7.org.uk/CareConnect-ProblemConditionCategory-1-VS" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3229,7 +3229,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-ProblemConditionCategory-1.valueset" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-ProblemConditionCategory-1-VS" />
       <isSummary value="true" />
       <mapping>
         <identity value="v2" />
@@ -5195,7 +5195,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-ProblemRelationship-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-ProblemRelationship-1-Ext" />
       </type>
     </element>
     <element>
@@ -5207,7 +5207,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-ProblemAssociated-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-ProblemAssociated-1-Ext" />
       </type>
     </element>
     <element>
@@ -5378,7 +5378,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1" />
         <aggregation value="bundled" />
       </type>
       <isSummary value="true" />
@@ -5431,7 +5431,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Encounter-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Encounter-1" />
         <aggregation value="bundled" />
       </type>
       <isSummary value="true" />
@@ -5483,12 +5483,12 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1" />
         <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
       </type>
       <isSummary value="true" />
@@ -5620,7 +5620,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Ext" />
       </type>
     </element>
     <element>
@@ -5675,7 +5675,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Extension.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-CodingQualifier-1-Ext" />
       </type>
     </element>
     <element>
@@ -5816,7 +5816,7 @@
         <strength value="required" />
         <description value="A category assigned to the condition" />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/CareConnect-ProblemConditionCategory-1.valueset" />
+          <reference value="http://hl7.org.uk/CareConnect-ProblemConditionCategory-1-VS" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -5878,7 +5878,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-ProblemConditionCategory-1.valueset" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-ProblemConditionCategory-1-VS" />
       <isSummary value="true" />
       <mapping>
         <identity value="v2" />

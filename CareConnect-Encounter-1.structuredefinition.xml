@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2016-08-31T13:45:44.103+01:00" />
   </meta>
-  <url value="http://hl7.org.uk/CareConnect-Encounter-1.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-Encounter-1" />
   <version value="1.0" />
   <name value="CareConnect-Encounter-1" />
   <status value="draft" />

@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2016-08-30T13:22:07.546+01:00" />
   </meta>
-  <url value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+  <url value="http://hl7.org.uk/CareConnect-Practitioner-1" />
   <name value="CareConnect-Practitioner-1" />
   <status value="draft" />
   <publisher value="HL7 UK" />
@@ -193,7 +193,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-Practitioner-1" />
       <isSummary value="true" />
     </element>
     <element>
@@ -5295,7 +5295,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <mapping>
         <identity value="rim" />
@@ -6182,7 +6182,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Location-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Location-1" />
       </type>
       <mapping>
         <identity value="rim" />
@@ -7651,7 +7651,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <mapping>
         <identity value="rim" />
@@ -7761,7 +7761,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://hl7.org.uk/CareConnect-HumanLanguage-1.valueset.xml" />
+        <valueSetUri value="http://hl7.org.uk/CareConnect-HumanLanguage-1-VS" />
       </binding>
       <mapping>
         <identity value="v2" />
@@ -8156,7 +8156,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
+      <fixedUri value="http://hl7.org.uk/CareConnect-Practitioner-1" />
       <isSummary value="true" />
     </element>
     <element>
@@ -8886,7 +8886,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <mapping>
         <identity value="rim" />
@@ -8906,7 +8906,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Location-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Location-1" />
       </type>
       <mapping>
         <identity value="rim" />
@@ -8934,7 +8934,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
       </type>
       <mapping>
         <identity value="rim" />
@@ -8959,7 +8959,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://hl7.org.uk/CareConnect-HumanLanguage-1.valueset.xml" />
+        <valueSetUri value="http://hl7.org.uk/CareConnect-HumanLanguage-1-VS" />
       </binding>
       <mapping>
         <identity value="v2" />
