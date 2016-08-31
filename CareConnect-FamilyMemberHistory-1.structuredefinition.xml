@@ -64,7 +64,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-FamilyMemberHistoryRecorder-1-Ext" />
+        <profile value="http://hl7.org.uk/CareConnect-FamilyMemberHistoryRcordr-1-Ext" />
       </type>
     </element>
     <element>
@@ -3887,7 +3887,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-FamilyMemberHistoryRecorder-1-Ext" />
+        <profile value="http://hl7.org.uk/CareConnect-FamilyMemberHistoryRcordr-1-Ext" />
       </type>
     </element>
     <element>
