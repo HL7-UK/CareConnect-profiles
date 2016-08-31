@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-31T13:47:53.42+01:00" />
+    <lastUpdated value="2016-08-31T22:05:40.689+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-ActivePeriod-1-Ext" />
   <version value="1.0" />
@@ -21,7 +21,8 @@
   <snapshot>
     <element>
       <path value="Extension" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <short value="Active period" />
+      <definition value="The active period of an organization or location (may contain only a start date)." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -124,7 +125,8 @@
   <differential>
     <element>
       <path value="Extension" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <short value="Active period" />
+      <definition value="The active period of an organization or location (may contain only a start date)." />
       <min value="0" />
       <max value="*" />
       <base>

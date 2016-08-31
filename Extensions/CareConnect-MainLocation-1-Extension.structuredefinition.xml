@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-30T13:23:02.394+01:00" />
+    <lastUpdated value="2016-08-31T22:09:00.731+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -22,7 +22,9 @@
   <snapshot>
     <element>
       <path value="Extension" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <name value="extension" />
+      <short value="Main location" />
+      <definition value="The main location of the subject." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -126,7 +128,9 @@
   <differential>
     <element>
       <path value="Extension" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <name value="extension" />
+      <short value="Main location" />
+      <definition value="The main location of the subject." />
       <min value="0" />
       <max value="*" />
       <base>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-30T13:23:09.07+01:00" />
+    <lastUpdated value="2016-08-31T22:09:41.684+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-NhsNumberVerificatnStatus-1-Ext" />
   <name value="CareConnect-NhsNumberVerificationStatus-1-Extension" />
@@ -19,7 +19,9 @@
   <snapshot>
     <element>
       <path value="Extension" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <name value="extension" />
+      <short value="NHS number verification status" />
+      <definition value="The verification/tracing status of the NHS number." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -126,7 +128,9 @@
   <differential>
     <element>
       <path value="Extension" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <name value="extension" />
+      <short value="NHS number verification status" />
+      <definition value="The verification/tracing status of the NHS number." />
       <min value="0" />
       <max value="*" />
       <base>

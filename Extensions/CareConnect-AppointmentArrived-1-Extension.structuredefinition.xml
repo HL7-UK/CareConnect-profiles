@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-30T13:22:38.529+01:00" />
+    <lastUpdated value="2016-08-31T22:06:29.095+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-AppointmentArrived-1-Ext" />
   <name value="CareConnect-AppointmentArrived-1-Extension" />
@@ -20,7 +20,8 @@
   <snapshot>
     <element>
       <path value="Extension" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <short value="Appointment arrived" />
+      <definition value="Date/time the patient arrived for the Appointment." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -123,7 +124,8 @@
   <differential>
     <element>
       <path value="Extension" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <short value="Appointment arrived" />
+      <definition value="Date/time the patient arrived for the Appointment." />
       <min value="0" />
       <max value="*" />
       <base>
