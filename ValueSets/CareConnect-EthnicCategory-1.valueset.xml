@@ -7,7 +7,7 @@
 	<extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
 		<valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/e/end/ethnic_category_code_de.asp?shownav=0"/>
 	</extension>
-	<url value="http://hl7.org.uk/CareConnect-EthnicCategory-1.valueset.xml"/>
+	<url value="http://hl7.org.uk/CareConnect-EthnicCategory-1-VS"/>
 	<version value="1.0.0"/>
 	<name value="CareConnect-EthnicCategory-1"/>
 	<status value="draft"/>

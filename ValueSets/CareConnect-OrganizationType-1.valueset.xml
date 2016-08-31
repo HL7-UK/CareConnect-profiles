@@ -7,7 +7,7 @@
 	<extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
 		<valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_type_de.asp?shownav=0"/>
 	</extension>
-	<url value="http://hl7.org.uk/CareConnect-OrganizationType-1.valueset.xml"/>
+	<url value="http://hl7.org.uk/CareConnect-OrganizationType-1-VS"/>
 	<version value="1.0.0"/>
 	<name value="CareConnect-OrganizationType-1"/>
 	<status value="draft"/>
