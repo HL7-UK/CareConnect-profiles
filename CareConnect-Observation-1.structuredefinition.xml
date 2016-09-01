@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-30T08:13:34.703+01:00" />
+    <lastUpdated value="2016-09-01T17:20:25.774+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-Observation-1" />
   <name value="CareConnect-Observation-1" />
@@ -6903,9 +6903,10 @@
       <condition value="obs-7" />
       <isSummary value="true" />
       <binding>
-        <strength value="preferred" />
+        <strength value="example" />
+        <description value="Codes identifying names of simple observations." />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/CareConnect-ObservationCode-1-VS" />
+          <reference value="http://hl7.org/fhir/ValueSet/observation-codes" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -9212,42 +9213,6 @@
       <mapping>
         <identity value="rim" />
         <map value=".targetObservation" />
-      </mapping>
-    </element>
-    <element>
-      <path value="Observation.component.code" />
-      <short value="Type of component observation (code / type)" />
-      <definition value="Describes what was observed. Sometimes this is called the observation &quot;code&quot;." />
-      <requirements value="Knowing what kind of observation is being made is essential to understanding the observation." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="Observation.component.code" />
-        <min value="1" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <condition value="obs-7" />
-      <isSummary value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSetReference>
-          <reference value="http://hl7.org.uk/CareConnect-ObservationCode-1-VS" />
-        </valueSetReference>
-      </binding>
-      <mapping>
-        <identity value="v2" />
-        <map value="OBX-3" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="code" />
-      </mapping>
-      <mapping>
-        <identity value="w5" />
-        <map value="what" />
       </mapping>
     </element>
     <element>
