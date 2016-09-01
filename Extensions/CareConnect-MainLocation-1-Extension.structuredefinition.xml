@@ -4,7 +4,7 @@
     <lastUpdated value="2016-08-31T22:09:00.731+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1" />
+    <valueInteger value="0" />
   </extension>
   <url value="http://hl7.org.uk/CareConnect-MainLocation-1-Ext" />
   <name value="CareConnect-MainLocation-1-Extension" />
