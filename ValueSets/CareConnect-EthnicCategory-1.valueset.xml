@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/valueset.xsd">
-	<id value="CareConnect-EthnicCategory-1”/>
+	<id value="CareConnect-EthnicCategory-1"/>
 	<meta>
 		<lastUpdated value="2015-11-01T10:00:00"/>
 	</meta>
@@ -14,7 +14,7 @@
 	<publisher value="HL7 UK"/>
 	<description value="The ethnicity of a patient, as specified by the patient. This valueset is comprised of codes from NHS Data Dictionary: Ethnic Category Code."/>
 	<codeSystem>
-		<system value="http://hl7.org.uk/fhir/ValueSet/CareConnect-EthnicCategory”/>
+		<system value="http://hl7.org.uk/fhir/ValueSet/CareConnect-EthnicCategory"/>
 		<concept>
 			<code value="A"/>
 			<display value="British"/>

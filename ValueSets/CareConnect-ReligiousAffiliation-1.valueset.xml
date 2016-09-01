@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/valueset.xsd">
-	<id value="CareConnect-ReligiousAffiliation-1”/>
+	<id value="CareConnect-ReligiousAffiliation-1"/>
 	<meta>
 		<lastUpdated value="2015-11-01T10:00:00"/>
 	</meta>
