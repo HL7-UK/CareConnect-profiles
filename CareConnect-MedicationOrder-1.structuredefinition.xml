@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-09-02T11:12:13.772+01:00" />
+    <lastUpdated value="2016-09-02T11:22:54.059+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -5885,18 +5885,6 @@
     </element>
     <element>
       <path value="MedicationOrder.dispenseRequest.extension" />
-      <name value="quantityText" />
-      <short value="Quantity representation" />
-      <definition value="A text representation of the structured quantity" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-MedicationQuantityText-1-Ext" />
-      </type>
-    </element>
-    <element>
-      <path value="MedicationOrder.dispenseRequest.extension" />
       <name value="reviewDate" />
       <short value="Repeat review date" />
       <definition value="The scheduled time for which the repeat prescription will be reviewed" />
@@ -6168,6 +6156,25 @@
         <identity value="rim" />
         <map value="quantity" />
       </mapping>
+    </element>
+    <element>
+      <path value="MedicationOrder.dispenseRequest.quantity.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="MedicationOrder.dispenseRequest.quantity.extension" />
+      <name value="quantityText" />
+      <short value="Quantity representation" />
+      <definition value="A text representation of the structured quantity" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-MedicationQuantityText-1-Ext" />
+      </type>
     </element>
     <element>
       <path value="MedicationOrder.dispenseRequest.quantity.id" />
@@ -8741,18 +8748,6 @@
     </element>
     <element>
       <path value="MedicationOrder.dispenseRequest.extension" />
-      <name value="quantityText" />
-      <short value="Quantity representation" />
-      <definition value="A text representation of the structured quantity" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-MedicationQuantityText-1-Ext" />
-      </type>
-    </element>
-    <element>
-      <path value="MedicationOrder.dispenseRequest.extension" />
       <name value="reviewDate" />
       <short value="Repeat review date" />
       <definition value="The scheduled time for which the repeat prescription will be reviewed" />
@@ -8869,6 +8864,25 @@
         <identity value="rim" />
         <map value="repeatNumber" />
       </mapping>
+    </element>
+    <element>
+      <path value="MedicationOrder.dispenseRequest.quantity.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="MedicationOrder.dispenseRequest.quantity.extension" />
+      <name value="quantityText" />
+      <short value="Quantity representation" />
+      <definition value="A text representation of the structured quantity" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-MedicationQuantityText-1-Ext" />
+      </type>
     </element>
     <element>
       <path value="MedicationOrder.dispenseRequest.quantity.value" />
