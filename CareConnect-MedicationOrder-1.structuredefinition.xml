@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-30T19:23:15.044+01:00" />
+    <lastUpdated value="2016-09-02T10:34:47.919+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -3182,7 +3182,7 @@
       </type>
       <isSummary value="true" />
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <description value="Codes identifying medication item" />
         <valueSetUri value="http://hl7.org.uk/CareConnect-ManufacturedMaterialSnCT-1-VS" />
       </binding>
@@ -8029,7 +8029,7 @@
       </type>
       <isSummary value="true" />
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <description value="Codes identifying medication item" />
         <valueSetUri value="http://hl7.org.uk/CareConnect-ManufacturedMaterialSnCT-1-VS" />
       </binding>
