@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-08-31T01:21:11.393+01:00" />
+    <lastUpdated value="2016-09-02T15:06:10.57+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -3170,7 +3170,7 @@
       <short value="Individual responsible for the annotation" />
       <definition value="The individual responsible for making the annotation." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="AllergyIntolerance.note.author[x]" />
         <min value="0" />
@@ -3206,7 +3206,7 @@
       <short value="When the annotation was made" />
       <definition value="Indicates when this particular annotation was made." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="AllergyIntolerance.note.time" />
         <min value="0" />
@@ -5678,6 +5678,66 @@
       <mapping>
         <identity value="w5" />
         <map value="class" />
+      </mapping>
+    </element>
+    <element>
+      <path value="AllergyIntolerance.note.author[x]" />
+      <short value="Individual responsible for the annotation" />
+      <definition value="The individual responsible for making the annotation." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="AllergyIntolerance.note.author[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="v2" />
+        <map value="N/A" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="Act.participant[typeCode=AUT].role" />
+      </mapping>
+    </element>
+    <element>
+      <path value="AllergyIntolerance.note.time" />
+      <short value="When the annotation was made" />
+      <definition value="Indicates when this particular annotation was made." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="AllergyIntolerance.note.time" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="v2" />
+        <map value="N/A" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="Act.effectiveTime" />
       </mapping>
     </element>
     <element>
