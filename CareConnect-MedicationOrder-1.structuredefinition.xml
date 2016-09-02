@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-09-02T11:22:54.059+01:00" />
+    <lastUpdated value="2016-09-02T12:07:13.022+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -5896,6 +5896,17 @@
       </type>
     </element>
     <element>
+      <path value="MedicationOrder.dispenseRequest.extension" />
+      <name value="lastIssueDate" />
+      <short value="The date a prescription was last issued" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-MedicationLastIssueDate-1-Ext" />
+      </type>
+    </element>
+    <element>
       <path value="MedicationOrder.dispenseRequest.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -7301,7 +7312,7 @@
       <short value="An order/prescription that this supersedes" />
       <definition value="A link to a resource representing an earlier order or prescription that this order supersedes." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="MedicationOrder.priorPrescription" />
         <min value="0" />
@@ -8759,6 +8770,17 @@
       </type>
     </element>
     <element>
+      <path value="MedicationOrder.dispenseRequest.extension" />
+      <name value="lastIssueDate" />
+      <short value="The date a prescription was last issued" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-MedicationLastIssueDate-1-Ext" />
+      </type>
+    </element>
+    <element>
       <path value="MedicationOrder.dispenseRequest.medication[x]" />
       <short value="Product to be supplied" />
       <definition value="Identifies the medication being administered. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications." />
@@ -9193,7 +9215,7 @@
       <short value="An order/prescription that this supersedes" />
       <definition value="A link to a resource representing an earlier order or prescription that this order supersedes." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="MedicationOrder.priorPrescription" />
         <min value="0" />
