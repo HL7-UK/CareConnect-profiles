@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-09-15T12:38:18.454+01:00" />
+    <lastUpdated value="2016-09-15T12:40:08.552+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-Patient-1" />
   <version value="1.0" />
@@ -3794,7 +3794,7 @@
       <path value="Patient.telecom.system" />
       <short value="phone | fax | email | pager | other" />
       <definition value="Telecommunications form for contact point - what communications system is required to make use of the contact." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Patient.telecom.system" />
@@ -3832,7 +3832,7 @@
       <definition value="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)." />
       <comments value="Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value." />
       <requirements value="Need to support legacy numbers that are not in a tightly controlled format." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Patient.telecom.value" />
@@ -3900,7 +3900,7 @@
       <definition value="Specifies a preferred order in which to use a set of contacts. Contacts are ranked with lower values coming before higher values." />
       <comments value="Note that rank does not necessarily follow the order in which the contacts are represented in the instance." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Patient.telecom.rank" />
         <min value="0" />
@@ -9802,6 +9802,97 @@
       <mapping>
         <identity value="servd" />
         <map value="./StartDate and ./EndDate" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.telecom.system" />
+      <short value="phone | fax | email | pager | other" />
+      <definition value="Telecommunications form for contact point - what communications system is required to make use of the contact." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Patient.telecom.system" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="code" />
+      </type>
+      <condition value="cpt-2" />
+      <isSummary value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Telecommunications form for contact point" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/contact-point-system" />
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2" />
+        <map value="XTN.3" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./scheme" />
+      </mapping>
+      <mapping>
+        <identity value="servd" />
+        <map value="./ContactPointType" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.telecom.value" />
+      <short value="The actual contact point details" />
+      <definition value="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)." />
+      <comments value="Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value." />
+      <requirements value="Need to support legacy numbers that are not in a tightly controlled format." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Patient.telecom.value" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XTN.1 (or XTN.12)" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./url" />
+      </mapping>
+      <mapping>
+        <identity value="servd" />
+        <map value="./Value" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.telecom.rank" />
+      <short value="Specify preferred order of use (1 = highest)" />
+      <definition value="Specifies a preferred order in which to use a set of contacts. Contacts are ranked with lower values coming before higher values." />
+      <comments value="Note that rank does not necessarily follow the order in which the contacts are represented in the instance." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Patient.telecom.rank" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="positiveInt" />
+      </type>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="v2" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
       </mapping>
     </element>
     <element>
