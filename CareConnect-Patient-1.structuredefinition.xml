@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-09-15T12:34:02.876+01:00" />
+    <lastUpdated value="2016-09-15T12:38:18.454+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-Patient-1" />
   <version value="1.0" />
@@ -4044,11 +4044,11 @@
     </element>
     <element>
       <path value="Patient.gender" />
-      <short value="male | female | other | unknown" />
+      <short value="Gender for administrative purposes" />
       <definition value="Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes." />
       <comments value="The gender may not match the biological sex as determined by genetics, or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than M and F, though the vast majority of systems and contexts only support M and F.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific gender aspect of interest (anatomical, chromosonal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosonal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overrideable error, not a &quot;hard&quot; error." />
       <requirements value="Needed for identification of the individual, in combination with (at least) name and birth date. Gender of individual drives many clinical processes." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Patient.gender" />
@@ -4061,7 +4061,6 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <description value="The gender of a person used for administrative purposes." />
         <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/administrative-gender" />
         </valueSetReference>
@@ -4081,11 +4080,11 @@
     </element>
     <element>
       <path value="Patient.birthDate" />
-      <short value="The date of birth for the individual" />
-      <definition value="The date of birth for the individual." />
-      <comments value="At least an estimated year should be provided as a guess if the real DOB is unknown  There is a standard extension &quot;patient-birthTime&quot; available that should be used where Time is required (such as in maternaty/infant care systems)." />
+      <short value="The date of birth for the patient" />
+      <definition value="The date of birth for the patient." />
+      <comments value="At least an estimated year should be provided as a guess if the real date of birth is unknown." />
       <requirements value="Age of the individual drives many clinical processes." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Patient.birthDate" />
@@ -4114,7 +4113,7 @@
       </mapping>
     </element>
     <element>
-      <path value="Patient.deceased[x]" />
+      <path value="Patient.deceasedDateTime" />
       <short value="Indicates if the individual is deceased or not" />
       <definition value="Indicates if the individual is deceased or not." />
       <comments value="If there's no value in the instance it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive." />
@@ -4126,9 +4125,6 @@
         <min value="0" />
         <max value="1" />
       </base>
-      <type>
-        <code value="boolean" />
-      </type>
       <type>
         <code value="dateTime" />
       </type>
@@ -9806,6 +9802,107 @@
       <mapping>
         <identity value="servd" />
         <map value="./StartDate and ./EndDate" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.gender" />
+      <short value="Gender for administrative purposes" />
+      <definition value="Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes." />
+      <comments value="The gender may not match the biological sex as determined by genetics, or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than M and F, though the vast majority of systems and contexts only support M and F.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific gender aspect of interest (anatomical, chromosonal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosonal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overrideable error, not a &quot;hard&quot; error." />
+      <requirements value="Needed for identification of the individual, in combination with (at least) name and birth date. Gender of individual drives many clinical processes." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Patient.gender" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="code" />
+      </type>
+      <isSummary value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender" />
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2" />
+        <map value="PID-8" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender" />
+      </mapping>
+      <mapping>
+        <identity value="cda" />
+        <map value=".patient.administrativeGenderCode" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.birthDate" />
+      <short value="The date of birth for the patient" />
+      <definition value="The date of birth for the patient." />
+      <comments value="At least an estimated year should be provided as a guess if the real date of birth is unknown." />
+      <requirements value="Age of the individual drives many clinical processes." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Patient.birthDate" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="date" />
+      </type>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PID-7" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="player[classCode=PSN|ANM and determinerCode=INSTANCE]/birthTime" />
+      </mapping>
+      <mapping>
+        <identity value="cda" />
+        <map value=".patient.birthTime" />
+      </mapping>
+      <mapping>
+        <identity value="loinc" />
+        <map value="21112-8" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.deceasedDateTime" />
+      <short value="Indicates if the individual is deceased or not" />
+      <definition value="Indicates if the individual is deceased or not." />
+      <comments value="If there's no value in the instance it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive." />
+      <requirements value="The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Patient.deceased[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <isModifier value="true" />
+      <isSummary value="true" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PID-30  (bool) and PID-29 (datetime)" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedInd, player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedTime" />
+      </mapping>
+      <mapping>
+        <identity value="cda" />
+        <map value="n/a" />
       </mapping>
     </element>
     <element>
