@@ -3,6 +3,9 @@
   <meta>
     <lastUpdated value="2016-09-16T11:40:55.653+01:00" />
   </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1" />
+  </extension>
   <url value="http://hl7.org.uk/CareConnect-Patient-1" />
   <version value="1.0" />
   <name value="CareConnect-Patient-1" />
