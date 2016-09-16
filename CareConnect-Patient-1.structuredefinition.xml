@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-09-16T14:10:09.833+01:00" />
+    <lastUpdated value="2016-09-16T14:24:48.656+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -105,7 +105,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org.uk/CareConnect-NhsCommunication-1-Ext" />
       </type>
-      <isModifier value="true" />
     </element>
     <element>
       <path value="Patient.id" />
@@ -6113,7 +6112,7 @@
       </mapping>
     </element>
     <element>
-      <path value="Patient.multipleBirth[x]" />
+      <path value="Patient.multipleBirthBoolean" />
       <short value="Whether patient is part of a multiple birth" />
       <definition value="Indicates whether the patient is part of a multiple or indicates the actual birth order." />
       <requirements value="For disambiguation of multiple-birth children, especially relevant where the care provider doesn't meet the patient, such as labs." />
@@ -6126,9 +6125,6 @@
       </base>
       <type>
         <code value="boolean" />
-      </type>
-      <type>
-        <code value="integer" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -10292,7 +10288,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org.uk/CareConnect-NhsCommunication-1-Ext" />
       </type>
-      <isModifier value="true" />
     </element>
     <element>
       <path value="Patient.id" />
@@ -11316,6 +11311,34 @@
       <mapping>
         <identity value="servd" />
         <map value="./Region" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.multipleBirthBoolean" />
+      <short value="Whether patient is part of a multiple birth" />
+      <definition value="Indicates whether the patient is part of a multiple or indicates the actual birth order." />
+      <requirements value="For disambiguation of multiple-birth children, especially relevant where the care provider doesn't meet the patient, such as labs." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Patient.multipleBirth[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="boolean" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="PID-24 (bool), PID-25 (integer)" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="player[classCode=PSN|ANM and determinerCode=INSTANCE]/multipleBirthInd,  player[classCode=PSN|ANM and determinerCode=INSTANCE]/multipleBirthOrderNumber" />
+      </mapping>
+      <mapping>
+        <identity value="cda" />
+        <map value="n/a" />
       </mapping>
     </element>
     <element>
