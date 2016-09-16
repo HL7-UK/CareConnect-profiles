@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-09-16T16:00:01.71+01:00" />
+    <lastUpdated value="2016-09-16T16:29:13.703+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -98,6 +98,32 @@
         <code value="Extension" />
         <profile value="http://hl7.org.uk/CareConnect-OrganDonor-1-Ext" />
       </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="residentialStatus" />
+      <short value="The residential status of the patient " />
+      <definition value="The residential status of the patient. For example if this patient is a UK resident." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-ResidentialStatus-1-Ext" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="treatmentCategory" />
+      <short value="The treatment category for this patient" />
+      <definition value="The treatment category for this patient. For example if this patient is entitled to free healthcare treatment." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-TreatmentCategory-1-Ext" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element>
       <path value="Patient.modifierExtension" />
@@ -9836,7 +9862,7 @@
       <definition value="Patient's nominated practitioner." />
       <comments value="This may be the primary care provider (in a GP context), or it may be a patient nominated care manager in a community/disablity setting, or even organization that will provide people to perform the care provider roles.  This is not to be used to record Care Teams, these should be recorded on either the CarePlan or EpisodeOfCare resources." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Patient.careProvider" />
         <min value="0" />
@@ -10289,6 +10315,32 @@
         <code value="Extension" />
         <profile value="http://hl7.org.uk/CareConnect-OrganDonor-1-Ext" />
       </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="residentialStatus" />
+      <short value="The residential status of the patient " />
+      <definition value="The residential status of the patient. For example if this patient is a UK resident." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-ResidentialStatus-1-Ext" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="treatmentCategory" />
+      <short value="The treatment category for this patient" />
+      <definition value="The treatment category for this patient. For example if this patient is entitled to free healthcare treatment." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-TreatmentCategory-1-Ext" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element>
       <path value="Patient.modifierExtension" />
@@ -12351,7 +12403,7 @@
       <definition value="Patient's nominated practitioner." />
       <comments value="This may be the primary care provider (in a GP context), or it may be a patient nominated care manager in a community/disablity setting, or even organization that will provide people to perform the care provider roles.  This is not to be used to record Care Teams, these should be recorded on either the CarePlan or EpisodeOfCare resources." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Patient.careProvider" />
         <min value="0" />
