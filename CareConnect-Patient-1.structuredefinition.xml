@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-09-16T14:24:48.656+01:00" />
+    <lastUpdated value="2016-09-16T15:21:52.802+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -85,6 +85,18 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.uk/CareConnect-GPRegistrationDetails-1-Ext" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="organDonor" />
+      <short value="An indicator that the patient is listed as an organ donor." />
+      <definition value="An indicator that the patient is listed as an organ donor." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-OrganDonor-1-Ext" />
       </type>
     </element>
     <element>
@@ -9820,8 +9832,8 @@
     </element>
     <element>
       <path value="Patient.careProvider" />
-      <short value="Patient's nominated primary care provider" />
-      <definition value="Patient's nominated care provider." />
+      <short value="Patient's nominated practitioner" />
+      <definition value="Patient's nominated practitioner." />
       <comments value="This may be the primary care provider (in a GP context), or it may be a patient nominated care manager in a community/disablity setting, or even organization that will provide people to perform the care provider roles.  This is not to be used to record Care Teams, these should be recorded on either the CarePlan or EpisodeOfCare resources." />
       <min value="0" />
       <max value="*" />
@@ -9830,10 +9842,6 @@
         <min value="0" />
         <max value="*" />
       </base>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
-      </type>
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Practitioner-1" />
@@ -9970,7 +9978,7 @@
       <comments value="There is no assumption that linked patient records have mutual links." />
       <requirements value="There are multiple usecases:   * Duplicate patient records due to the clerical errors associated with the difficulties of identifying humans consistently, and * Distribution of patient information across multiple servers." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Patient.link" />
         <min value="0" />
@@ -10268,6 +10276,18 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.uk/CareConnect-GPRegistrationDetails-1-Ext" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="organDonor" />
+      <short value="An indicator that the patient is listed as an organ donor." />
+      <definition value="An indicator that the patient is listed as an organ donor." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-OrganDonor-1-Ext" />
       </type>
     </element>
     <element>
@@ -11817,8 +11837,8 @@
     </element>
     <element>
       <path value="Patient.careProvider" />
-      <short value="Patient's nominated primary care provider" />
-      <definition value="Patient's nominated care provider." />
+      <short value="Patient's nominated practitioner" />
+      <definition value="Patient's nominated practitioner." />
       <comments value="This may be the primary care provider (in a GP context), or it may be a patient nominated care manager in a community/disablity setting, or even organization that will provide people to perform the care provider roles.  This is not to be used to record Care Teams, these should be recorded on either the CarePlan or EpisodeOfCare resources." />
       <min value="0" />
       <max value="*" />
@@ -11827,10 +11847,6 @@
         <min value="0" />
         <max value="*" />
       </base>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Organization-1" />
-      </type>
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org.uk/CareConnect-Practitioner-1" />
@@ -11873,6 +11889,32 @@
       <mapping>
         <identity value="cda" />
         <map value=".providerOrganization" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.link" />
+      <short value="Link to another patient resource that concerns the same actual person" />
+      <definition value="Link to another patient resource that concerns the same actual patient." />
+      <comments value="There is no assumption that linked patient records have mutual links." />
+      <requirements value="There are multiple usecases:   * Duplicate patient records due to the clerical errors associated with the difficulties of identifying humans consistently, and * Distribution of patient information across multiple servers." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Patient.link" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <isModifier value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="outboundLink" />
+      </mapping>
+      <mapping>
+        <identity value="cda" />
+        <map value="n/a" />
       </mapping>
     </element>
     <element>
