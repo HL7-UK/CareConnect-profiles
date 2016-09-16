@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-09-15T15:51:53.731+01:00" />
+    <lastUpdated value="2016-09-16T11:40:55.653+01:00" />
   </meta>
   <url value="http://hl7.org.uk/CareConnect-Patient-1" />
   <version value="1.0" />
@@ -71,6 +71,17 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-Ext" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="gpRegistrationDetails" />
+      <short value="Additional GP registration information for the Patient resource" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-GPRegistrationDetails-1-Ext" />
       </type>
     </element>
     <element>
@@ -9120,6 +9131,17 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-Ext" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="gpRegistrationDetails" />
+      <short value="Additional GP registration information for the Patient resource" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-GPRegistrationDetails-1-Ext" />
       </type>
     </element>
     <element>
