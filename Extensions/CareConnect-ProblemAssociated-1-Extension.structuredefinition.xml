@@ -1,11 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2016-08-31T13:51:42.6+01:00" />
   </meta>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1" />
-  </extension>
   <url value="http://hl7.org.uk/CareConnect-ProblemAssociated-1-Ext" />
   <name value="CareConnect-ProblemAssociated-1-Extension" />
   <status value="draft" />

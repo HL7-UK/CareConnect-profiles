@@ -1,8 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2016-09-19T14:43:52.198+01:00" />
   </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1" />
+  </extension>
   <url value="http://hl7.org.uk/CareConnect-Condition-1" />
   <version value="1.0" />
   <name value="CareConnect-Condition-1" />
@@ -3051,7 +3054,7 @@
       <binding>
         <strength value="extensible" />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/fhir/ValueSet/CareConnect-ConditionCategory-1" />
+          <reference value="http://hl7.org.uk/CareConnect-ConditionCategory-1-VS" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -5976,7 +5979,7 @@
       <binding>
         <strength value="extensible" />
         <valueSetReference>
-          <reference value="http://hl7.org.uk/fhir/ValueSet/CareConnect-ConditionCategory-1" />
+          <reference value="http://hl7.org.uk/CareConnect-ConditionCategory-1-VS" />
         </valueSetReference>
       </binding>
       <mapping>
