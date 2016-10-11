@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2016-07-27T13:01:43.719+01:00" />
+  </meta>
+  <url value="http://hl7.org.uk/CareConnect-AllergyIntolerance-1.structuredefinition.xml" />
+  <version value="1.0" />
+  <name value="CareConnect-AllergyIntolerance-1" />
+  <status value="draft" />
+  <description value="CareConnect AllergyIntolerance profile" />
+  <fhirVersion value="1.0.2" />
+  <kind value="resource" />
+  <constrainedType value="AllergyIntolerance" />
+  <abstract value="false" />
+  <base value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+  <differential>
+    <element>
+      <path value="AllergyIntolerance" />
+      <type>
+        <code value="AllergyIntolerance" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
