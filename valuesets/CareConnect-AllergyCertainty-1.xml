@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/valueset.xsd">
+<ValueSet xmlns="http://hl7.org/fhir">
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
@@ -7,7 +6,7 @@
 		<valueInteger value="1"/>
 	</extension>
 	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AllergyCertainty-1"/>
-	<name value="CareConnect-AllergyCertainty-1"/>
+	<name value="Care Connect Allergy Certainty"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="A code from the SNOMED Clinical Terminology UK coding system that describes the certainty of an allergy."/>

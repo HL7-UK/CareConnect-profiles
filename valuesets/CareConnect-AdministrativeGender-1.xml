@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
@@ -55,9 +54,8 @@
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
 		<valueInteger value="1"/>
 	</extension>
-	<!--      DD MAPPING CODES     -->
 	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AdministrativeGender-1"/>
-    <version value="1.0.0" />
+	<version value="1.0.0"/>
 	<name value="Care Connect Administrative Gender"/>
 	<status value="active"/>
 	<description value="The gender of a person used for administrative purposes."/>
