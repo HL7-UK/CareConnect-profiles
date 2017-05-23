@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<meta>
-		<lastUpdated value="2015-11-01T10:00:00"/>
+		<lastUpdated value="2015-11-01T10:00:00+00:00"/>
 	</meta>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-		<valueInteger value="1" />
+		<valueInteger value="1"/>
 	</extension>
 	<extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
 		<valueUri value="urn:oid:2.16.840.1.113883.2.1.3.2.4.16.21"/>
 	</extension>
-	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ReligiousAffiliation-1"/>  
-	<version value="1.0.0" />
+	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ReligiousAffiliation-1"/>
+	<version value="1.0.0"/>
 	<name value="Care Connect Religious Affiliation"/>
 	<status value="active"/>
 	<publisher value="HL7 UK"/>

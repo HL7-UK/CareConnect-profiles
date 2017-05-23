@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
-    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-      <valueInteger value="1" />
-    </extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="1"/>
+	</extension>
 	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MedicationDosageRoute-1"/>
-	<name value="CareConnect-MedicationDosageRoute-1"/>
+	<name value="Care Connect Medication Dosage Route"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration. Any code from the SNOMED CT UK 'NHS e-Prescribing route of administration subset' with subset original id 30201000001137; the corresponding SNOMED CT UK Refset FSN is 'ePrescribing route of administration simple reference set (foundation metadata concept)' with Refset Id 999000051000001100."/>

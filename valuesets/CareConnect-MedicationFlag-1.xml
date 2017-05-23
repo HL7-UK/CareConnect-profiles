@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<meta>
 		<lastUpdated value="2016-01-13T00:00:00+00:00"/>
@@ -7,7 +6,7 @@
 		<valueInteger value="1"/>
 	</extension>
 	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MedicationFlag-1"/>
-	<name value="CareConnect-MedicationFlag-1"/>
+	<name value="Care Connect Medication Flag"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="List of detail codes for flagged medication issues."/>

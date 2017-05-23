@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<meta>
 		<lastUpdated value="2016-08-29T00:00:00+00:00"/>
 	</meta>
-    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-        <valueInteger value="1" />
-    </extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="1"/>
+	</extension>
 	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ConditionEpisodicity-1"/>
-	<name value="CareConnect-ConditionEpisodicity-1"/>
+	<name value="Care Connect Condition Episodicity"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="Specifies the episodicity of a condition."/>
