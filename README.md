@@ -36,4 +36,4 @@ a copy of the FHIR license at
     https://www.hl7.org/fhir/license.html
 
 ## Trademarks
-HL7 and FHIR are registered trademarks of Health Level Seven InternationalL7 and FHIR are registered trademarks of Health Level Seven International
+HL7 and FHIR are registered trademarks of Health Level Seven International
