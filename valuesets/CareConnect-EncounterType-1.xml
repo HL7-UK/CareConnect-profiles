@@ -11,7 +11,7 @@
 	<status value="draft" />
 	<publisher value="HL7 UK"/>
 	<description value="A code from the SNOMED Clinical Terminology UK coding system that describes an encounter between a care professional and the patient (or patient's record). The patient may be represented by a third party such as a carer or family member. Any code from the SNOMED CT UK 'Encounter Type' subset with subset original id 1341000000130; the corresponding SNOMED CT UK Refset fully specified name is 'Clinical document architecture encounter type simple reference set (foundation metadata concept)' with Refset Id 999000351000000101."/>
-	<copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+	<copyright value="Copyright © 2016+ HL7 UK&#xD;&#xA;&#xD;&#xA;This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
