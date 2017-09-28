@@ -6,7 +6,7 @@
   <url value="http://hl7.org/fhir/StructureDefinition/patient-birthTime" />
   <version value="1.0.0" />
   <name value="patient-birthTime" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7" />
   <date value="2015-09-22T11:02:49+01:00" />
   <description value="The time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively." />

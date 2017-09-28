@@ -5,7 +5,7 @@
 	<url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Procedure-1"/>
 	<version value="1.0.0"/>
 	<name value="CareConnect-Procedure-1"/>
-	<status value="active"/>
+	<status value="draft" />
 	<publisher value="HL7 UK"/>
 	<date value="2017-03-02T10:44:39.7203604Z"/>
 	<description value="An action that is or was performed on a patient."/>

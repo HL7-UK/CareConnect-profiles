@@ -6,7 +6,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-Evidence-1" />
   <version value="1.0.0" />
   <name value="Extension-CareConnect-Evidence-1" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-02-28T09:43:56.0184517Z" />
   <description value="This Extension resource is constrained to support a reference to results of investigations that confirmed the certainty of the diagnosis. Examples might include results of skin prick allergy tests." />

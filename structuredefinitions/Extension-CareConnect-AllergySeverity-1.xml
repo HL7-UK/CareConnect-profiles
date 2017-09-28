@@ -6,7 +6,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-AllergySeverity-1" />
   <version value="1.0.0" />
   <name value="Extension-CareConnect-AllergySeverity-1" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-02-28T08:57:55.3474689Z" />
   <description value="This Extension resource is constrained to support a coded severity of the allergy/intolerance." />

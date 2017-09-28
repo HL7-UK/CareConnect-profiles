@@ -6,7 +6,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MedicationFlag-1" />
   <version value="1.0.0" />
   <name value="Extension-CareConnect-MedicationFlag-1" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-02-24T15:08:13.0757384Z" />
   <description value="This Extension is used to specify the flags related to the patient's medications." />

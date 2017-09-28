@@ -6,7 +6,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid" />
   <version value="1.0.0" />
   <name value="Extension-coding-sctdescid" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-02-28T14:07:09.1455913Z" />
   <description value="This Extension resource is constrained to support SNOMED CT Description ID for the display." />

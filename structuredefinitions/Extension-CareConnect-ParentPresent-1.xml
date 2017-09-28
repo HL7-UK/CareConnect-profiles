@@ -6,7 +6,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ParentPresent-1" />
   <version value="1.0.0" />
   <name value="Extension-CareConnect-ParentPresent-1" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-02-28T13:42:52.5528296Z" />
   <description value="This Extension resource is constrained to indicate whether a parent was present at the Immunization." />

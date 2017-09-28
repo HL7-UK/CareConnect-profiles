@@ -6,7 +6,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Medication-Flag-1" />
   <version value="1.0.0" />
   <name value="CareConnect-Medication-Flag-1" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-02-24T15:11:33.5617384Z" />
   <description value="This Flag Resource carries prospective warnings of potential issues related to the patient's medications." />

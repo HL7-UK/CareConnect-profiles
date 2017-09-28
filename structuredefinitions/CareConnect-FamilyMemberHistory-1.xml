@@ -6,7 +6,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-FamilyMemberHistory-1" />
   <version value="1.0.0" />
   <name value="CareConnect-FamilyMemberHistory-1" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-02-27" />
   <description value="Significant health events and conditions for a person related to the patient relevant in the context of care for the patient." />

@@ -6,7 +6,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MedicationFlagAssociation-1" />
   <version value="1.0.0" />
   <name value="Extension-CareConnect-MedicationFlagAssociation-1" />
-  <status value="active" />
+  <status value="draft" />
   <date value="2017-02-24T15:35:02.3907384Z" />
   <description value="This Extension is used to specify the links between a MedicationFlag and its associated MedicationOrder/MedicationStatement resource(s)." />
   <fhirVersion value="1.0.2" />

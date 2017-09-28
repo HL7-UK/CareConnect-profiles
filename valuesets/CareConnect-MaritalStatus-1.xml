@@ -6,7 +6,7 @@
 		<ConceptMap>
 			<id value="map"/>
 			<name value="NHS Data Model and Dictionary Mapping"/>
-			<status value="active"/>
+			<status value="draft" />
 			<sourceReference>
 				<reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MaritalStatus-1"/>
 			</sourceReference>
@@ -85,7 +85,7 @@
 	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MaritalStatus-1"/>
 	<version value="1.0.0"/>
 	<name value="Care Connect Marital Status"/>
-	<status value="active"/>
+	<status value="draft" />
 	<publisher value="HL7 UK"/>
 	<description value="This value set defines the set of codes that can be used to indicate the marital status of a person."/>
 	<requirements value="The codes listed in this FHIR ValueSet are a restricted set of the FHIR Marital Status set of codes. This FHIR ValueSet has a 'Required' binding; for conformance the Marital Status element SHALL include a code listed below."/>

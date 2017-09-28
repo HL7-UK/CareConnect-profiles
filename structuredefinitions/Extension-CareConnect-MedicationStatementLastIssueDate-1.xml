@@ -6,7 +6,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MedicationStatementLastIssueDate-1" />
   <version value="1.0.0" />
   <name value="Extension-CareConnect-MedicationStatementLastIssueDate-1" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-02-24T14:53:16.4027384Z" />
   <description value="Indicates the date a prescription was last issued." />

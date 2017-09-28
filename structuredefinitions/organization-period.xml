@@ -6,7 +6,7 @@
   <url value="http://hl7.org/fhir/StructureDefinition/organization-period" />
   <version value="1.0.0" />
   <name value="organization-period" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7" />
   <date value="2017-03-02T10:33:25.2534267Z" />
   <description value="The date range that this organization should be considered available." />

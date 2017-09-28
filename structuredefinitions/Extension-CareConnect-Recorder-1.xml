@@ -6,7 +6,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-Recorder-1" />
   <version value="1.0.0" />
   <name value="Extension-CareConnect-Recorder-1" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-02-28" />
   <description value="This Extension is used to specify who recorded the event." />

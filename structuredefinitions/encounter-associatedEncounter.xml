@@ -5,7 +5,7 @@
 	<url value="http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter"/>
 	<version value="1.0.0"/>
 	<name value="encounter-associatedEncounter"/>
-	<status value="active"/>
+	<status value="draft" />
 	<date value="2017-02-28T09:08:25.6170643Z"/>
 	<description value="This encounter occurs within the scope of the referenced encounter."/>
 	<copyright value="Copyright © Health Level Seven, Inc. - FHIR WG"/>

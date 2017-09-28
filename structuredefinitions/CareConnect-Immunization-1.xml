@@ -5,7 +5,7 @@
 	<url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Immunization-1"/>
 	<version value="1.0.0"/>
 	<name value="CareConnect-Immunization-1"/>
-	<status value="active"/>
+	<status value="draft" />
 	<publisher value="HL7 UK"/>
 	<date value="2017-02-28T11:41:50.6571362Z"/>
 	<description value="This Immunization Resource describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party and may include vaccine reaction information and what vaccination protocol was followed."/>

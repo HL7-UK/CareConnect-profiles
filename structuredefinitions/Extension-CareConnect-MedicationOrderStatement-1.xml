@@ -6,7 +6,7 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MedicationOrderStatement-1" />
   <version value="1.0.0" />
   <name value="Extension-CareConnect-MedicationOrderStatement-1" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-02-27T10:10:30.0373759Z" />
   <description value="Used to specify a link to the medication authorisation that this order is part of." />

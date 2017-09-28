@@ -5,7 +5,7 @@
 	<url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-AllergyCertainty-1"/>
 	<version value="1.0.0"/>
 	<name value="Extension-CareConnect-AllergyCertainty-1"/>
-	<status value="active"/>
+	<status value="draft" />
 	<publisher value="HL7 UK"/>
 	<date value="2017-02-28T08:41:41.8706481Z"/>
 	<description value="This Extension resource is constrained to support a coded certainty of the allergy/intolerance."/>

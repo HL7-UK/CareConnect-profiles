@@ -5,7 +5,7 @@
 	<url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Flag-1"/>
 	<version value="1.0.0"/>
 	<name value="CareConnect-Flag-1"/>
-	<status value="active"/>
+	<status value="draft" />
 	<publisher value="HL7 UK"/>
 	<date value="2017-02-27"/>
 	<description value="Prospective warnings of potential issues when providing care to the patient."/>
